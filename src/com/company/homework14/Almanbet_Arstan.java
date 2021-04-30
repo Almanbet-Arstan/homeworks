@@ -1,4 +1,4 @@
-package com.company;
+package com.company.homework14;
 
 public class Almanbet_Arstan {
     public static void main(String[] args) {
