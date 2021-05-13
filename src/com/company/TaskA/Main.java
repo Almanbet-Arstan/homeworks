@@ -2,45 +2,36 @@ package com.company.TaskA;
 
 public class Main {
     public static void main(String[] args) {
-        Parrot parrot1 = new Parrot();
-        parrot1.setName("Кеша");
-        parrot1.setAge(14);
-        parrot1.setHabitat("Клетка");
-        parrot1.speak();
-        Parrot parrot2= new Parrot();
-        parrot2.setName("Яша");
-        parrot2.setAge(50);
-        parrot2.setHabitat("Зоопарк");
-        parrot2.speak();
-        Dog dog1 = new Dog();
-        dog1.setName("Бобик");
-        dog1.setAge(3);
-        dog1.setHabitat("Будка");
-        dog1.speak();
-        Dog dog2 = new Dog();
-        dog2.setName("Мухтар");
-        dog2.setAge(10);
-        dog2.setHabitat("Полицейский участок");
-        dog2.speak();
-        Cat cat1 = new Cat();
-        cat1.setName("Тимофей");
-        cat1.setAge(13);
-        cat1.setHabitat("Деревня");
-        cat1.speak();
-        Cat cat2 = new Cat();
-        cat2.setName("Патрик");
-        cat2.setAge(4);
-        cat2.setHabitat("Квартира");
-        cat2.speak();
-        Fish fish1 = new Fish();
-        fish1.setName("Дори");
-        fish1.setAge(2);
-        fish1.setHabitat("Океан");
-        fish1.speak();
-        Fish fish2 = new Fish();
-        fish2.setName("Жонатан");
-        fish2.setAge(1);
-        fish2.setHabitat("Аквариум");
-        fish2.tell();
+        Course course = new Course("Java", "16.02.2021", "20-001079", "Нурсултан");
+        Student[] students = new Student[2];
+        students[0] = new Student("16.08.03", "Тотоев", "Алманбет", "Мужчина", 17);
+        students[1] = new Student("01.01.03", "Сериков", "Астан", "Мужчина", 18);
+        Group group = new Group(students, "16.02.21", 10);
+
+        Lessons lesson = new Lessons("13.05.21", students, course, group,"19:00", true, true);
+
+        System.out.println(lesson);
+
+//        Student student = new Student();
+//        student.setAge(18);
+//        student.setGender("Male");
+//        student.setName("Aziret");
+//        student.setSurname("Ramankulov");
+//        student.setDateOfBirth(8);
+//
+//        Student student1 = new Student();
+//        student1.setDateOfBirth(1);
+//        student1.setSurname("Serikov");
+//        student1.setName("Astan");
+//        student1.setGender("Male");
+//        student1.setAge(18);
+//
+//        Student[] students = new Student[2];
+//        students[0] = student;
+//        students[1] = student1;
+
+//        Group group = new Group();
+//        group.setStudents(students);
+//        group.printStudents(group.getStudents());
     }
 }
