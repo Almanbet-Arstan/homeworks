@@ -1,4 +1,4 @@
-package com.company.TaskA;
+package com.company.TaskA.ITacademyW21;
 
 public class Course {
     private String courseName;

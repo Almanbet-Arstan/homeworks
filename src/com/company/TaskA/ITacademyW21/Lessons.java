@@ -1,15 +1,18 @@
-package com.company.TaskA;
+package com.company.TaskA.ITacademyW21;
+
+import com.company.TaskA.Students.Group;
+import com.company.TaskA.Students.Student;
 
 import java.util.Arrays;
 
 public class Lessons {
-    String dateOfEvent;
-    Student[] studentsPresent;
-    Course course;
-    Group group;
-    String startTime;
-    boolean hasHWBeenSet;
-    boolean wasThereExam;
+    private String dateOfEvent;
+    private Student[] studentsPresent;
+    private Course course;
+    private Group group;
+    private String startTime;
+    private boolean hasHWBeenSet;
+    private boolean wasThereExam;
 
     public Lessons(String dateOfEvent, Student[] studentsPresent, Course course, Group group, String startTime, boolean hasHWBeenSet, boolean wasThereExam) {
         this.dateOfEvent = dateOfEvent;

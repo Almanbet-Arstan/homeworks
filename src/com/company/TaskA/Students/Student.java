@@ -1,4 +1,4 @@
-package com.company.TaskA;
+package com.company.TaskA.Students;
 
 public class Student {
     private String dateOfBirth;

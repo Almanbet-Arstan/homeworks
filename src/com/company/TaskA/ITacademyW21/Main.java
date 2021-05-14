@@ -1,6 +1,10 @@
-package com.company.TaskA;
+package com.company.TaskA.ITacademyW21;
+
+import com.company.TaskA.Students.Group;
+import com.company.TaskA.Students.Student;
 
 public class Main {
+
     public static void main(String[] args) {
         Course course = new Course("Java", "16.02.2021", "20-001079", "Нурсултан");
         Student[] students = new Student[2];

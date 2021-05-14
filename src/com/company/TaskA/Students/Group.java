@@ -1,4 +1,6 @@
-package com.company.TaskA;
+package com.company.TaskA.Students;
+
+import com.company.TaskA.Students.Student;
 
 import java.util.Arrays;
 
