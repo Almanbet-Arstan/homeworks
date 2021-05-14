@@ -12,7 +12,7 @@ public class Main {
         students[1] = new Student("01.01.03", "Сериков", "Астан", "Мужчина", 18);
         Group group = new Group(students, "16.02.21", 10);
 
-        Lessons lesson = new Lessons("13.05.21", students, course, group,"19:00", true, true);
+        Lessons lesson = new Lessons("13.05.21", students, course, group,"19:00", false, true);
 
         System.out.println(lesson);
 

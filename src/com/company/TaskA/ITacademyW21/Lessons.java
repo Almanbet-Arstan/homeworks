@@ -65,7 +65,7 @@ public class Lessons {
     }
 
     public String isHasHWBeenSet() {
-        if (hasHWBeenSet == true) return "Да было";
+        if (hasHWBeenSet) return "Да было";
         return "Нет не было";
     }
 
@@ -74,7 +74,7 @@ public class Lessons {
     }
 
     public String isWasThereExam() {
-        if (wasThereExam == true) return "Да был";
+        if (wasThereExam) return "Да был";
         return "Нет не был";
     }
 
