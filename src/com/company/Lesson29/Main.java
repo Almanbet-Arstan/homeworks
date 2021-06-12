@@ -5,12 +5,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        npe();
-        iobeex();
-        fnfe();
-        throwNpe();
-        throwErrorIfNotSquare(4);
+//        npe();
+//        iobeex();
+//        fnfe();
+//        throwNpe();
+        throwErrorIfNotSquare(81);
     }
+
+
     public static void throwErrorIfNotSquare(int square){
         try {
             if (Math.pow(Math.sqrt(square), 2) != square)
