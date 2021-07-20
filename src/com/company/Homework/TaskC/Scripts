@@ -1,0 +1,21 @@
+create table people (
+	id serial primary key,
+	fio varchar not null,
+	date_of_birth date not null
+);
+
+create table country (
+ id serial primary key,
+ name varchar unique not null,
+ code integer unique not null,
+ population integer not null,
+ president integer references people(id)
+);
+
+create table city(
+	id serial primary key,
+	name varchar unique not null,
+	country_id integer references country(id),
+	population integer not null,
+	mayor integer references people(id)
+);
