@@ -11,7 +11,7 @@ import java.util.List;
 public class LotteryImpl implements Lottery{
     private final String url = "jdbc:postgresql://localhost:5432/";
     private final String user = "postgres";
-    private final String password = "a1l2m3a4";
+    private final String password = "";
 
     public Connection connect() throws SQLException {
         Connection connection = DriverManager.getConnection(url, user, password);
