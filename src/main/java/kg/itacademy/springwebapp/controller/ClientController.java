@@ -23,6 +23,11 @@ public class ClientController {
         return clientService.getById(id);
     }
 
+    @GetMapping("/status/{statusId}")
+    public List<Client> getByStatus(@PathVariable Long statusId){
+        return clientService.findByStatus(statusId);
+    }
+
     @PostMapping
     public Client saveClient(@RequestBody Client client){
         return clientService.saveClient(client);
@@ -30,7 +35,7 @@ public class ClientController {
 
     @PutMapping
     public Client updateClient(@RequestBody Client client){
-        return clientService.saveClient(client);
+        return clientService.updateClient(client);
     }
 
     @DeleteMapping("/{id}")
